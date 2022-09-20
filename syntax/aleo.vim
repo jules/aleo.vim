@@ -5,7 +5,7 @@
 " For bugs, patches and license go to https://github.com/julesdesmit/aleo.vim
 
 " Match TODO comments
-syn keyword aleoTodos TODO XXX FIXME NOTE
+syn keyword aleoTodos TODO XXX FIXME NOTE NB SAFETY
 
 " Match language specific keywords
 syn keyword aleoKeywords
