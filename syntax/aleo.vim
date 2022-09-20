@@ -12,7 +12,6 @@ syn keyword aleoKeywords
       \ as
       \ into
       \ finalize
-      \ closure
       \ abs
       \ add
       \ and
@@ -61,7 +60,7 @@ syn keyword aleoKeywords
       \ xor
       \ w
 
-syn keyword aleoStructure record mapping interface program function call nextgroup=aleoFuncName skipwhite skipempty
+syn keyword aleoStructure record mapping interface program function call closure nextgroup=aleoFuncName skipwhite skipempty
 syn keyword aleoType key value i8 i16 i32 i64 i128 u8 u16 u32 u64 u128 field group address scalar boolean
 syn keyword aleoVisibility constant public private aleo increment decrement
 syn keyword aleoImports import
