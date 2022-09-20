@@ -89,7 +89,7 @@ hi def link aleoBoolean Boolean
 
 hi def link aleoKeywords Keyword
 hi def link aleoStructure Structure
-hi def link aleoType Type
+hi def link aleoType Number
 hi def link aleoImports Include
 hi def link aleoVisibility PreProc
 hi def link aleoFuncName Function
