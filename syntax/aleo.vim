@@ -12,46 +12,36 @@ syn keyword aleoKeywords
       \ as
       \ into
       \ finalize
-      \ function
       \ closure
-      \ abs.w
       \ abs
-      \ add.w
       \ add
       \ and
-      \ assert.eq
-      \ assert.neq
-      \ call
+      \ assert
+      \ eq
+      \ neq
       \ cast
-      \ commit.bhp256
-      \ commit.bhp512
-      \ commit.bhp768
-      \ commit.bhp1024
-      \ commit.ped64
-      \ commit.ped128
-      \ div.w
+      \ commit
+      \ bhp256
+      \ bhp512
+      \ bhp768
+      \ bhp1024
+      \ ped64
+      \ ped128
       \ div
       \ double
       \ gt
       \ gte
-      \ hash.bhp256
-      \ hash.bhp512
-      \ hash.bhp768
-      \ hash.bhp1024
-      \ hash.ped64
-      \ hash.ped128
-      \ hash.psd2
-      \ hash.psd4
-      \ hash.psd8
+      \ hash
+      \ psd2
+      \ psd4
+      \ psd8
       \ inv
       \ input
-      \ is\.eq
-      \ is\.neq
+      \ is
       \ lt
       \ lte
       \ key
       \ mod
-      \ mul.w
       \ mul
       \ nand
       \ neg
@@ -59,26 +49,24 @@ syn keyword aleoKeywords
       \ not
       \ or
       \ output
-      \ pow.w
       \ pow
-      \ rem.w
       \ rem
-      \ shl.w
       \ shl
-      \ shr.w
       \ shr
       \ sqrt
-      \ sub.w
       \ sub
       \ square
       \ ternary
       \ value
       \ xor
+      \ w
 
-syn keyword aleoStructure record mapping interface program nextgroup=aleoFuncName skipwhite skipempty
+syn keyword aleoStructure record mapping interface program function call nextgroup=aleoFuncName skipwhite skipempty
 syn keyword aleoType key value i8 i16 i32 i64 i128 u8 u16 u32 u64 u128 field group address scalar boolean
 syn keyword aleoVisibility constant public private aleo increment decrement
 syn keyword aleoImports import
+
+syn match aleoFuncName "\%(r#\)\=\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*" display contained
 
 syn match aleoDecNumber display "\<[0-9][0-9_]*\%(field\|group\|scalar\|boolean\|[iu]\%(8\|16\|32\|64\|128\)\)\="
 syn match aleoHexNumber display "\<0x[a-fA-F0-9_]\+\%(field\|group\|address\|scalar\|[iu]\%(8\|16\|32\|64\|128\)\)\="
