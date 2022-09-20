@@ -75,8 +75,8 @@ syn match aleoRegister display "\<r[0-9][0-9_]\="
 
 syn keyword aleoBoolean true false
 
-syn region aleoCommentLine start="//" end="$"
-syn region aleoCommentBlock start="/\*" end="\*/"
+syn region aleoCommentLine start="//" end="$" contains=aleoTodos
+syn region aleoCommentBlock start="/\*" end="\*/" contains=aleoTodos
 
 " Set highlights
 hi def link aleoTodos Todo
