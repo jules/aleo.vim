@@ -45,8 +45,8 @@ syn keyword aleoKeywords
       \ hash.psd8
       \ inv
       \ input
-      \ is.eq
-      \ is.neq
+      \ is\.eq
+      \ is\.neq
       \ lt
       \ lte
       \ key
