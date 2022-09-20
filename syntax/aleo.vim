@@ -5,7 +5,7 @@
 " For bugs, patches and license go to https://github.com/julesdesmit/aleo.vim
 
 " Match TODO comments
-syn keyword aleoTodos TODO XXX FIXME NOTE NB SAFETY
+syn keyword aleoTodos TODO XXX FIXME NOTE NB SAFETY contained
 
 " Match language specific keywords
 syn keyword aleoKeywords
@@ -91,7 +91,7 @@ hi def link aleoBoolean Boolean
 
 hi def link aleoKeywords Keyword
 hi def link aleoStructure Structure
-hi def link aleoFunction Structure
+hi def link aleoFunction Keyword
 hi def link aleoType Number
 hi def link aleoImports Include
 hi def link aleoVisibility PreProc
