@@ -97,4 +97,4 @@ hi def link aleoImports Include
 hi def link aleoVisibility PreProc
 hi def link aleoFuncName Function
 hi def link aleoIdentifier Identifier
-hi aleoFuncName ctermfg=yellow
+hi aleoFuncName ctermfg=216
