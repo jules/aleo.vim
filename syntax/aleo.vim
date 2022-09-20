@@ -64,7 +64,7 @@ syn keyword aleoStructure record mapping interface program nextgroup=aleoIdentif
 syn keyword aleoFunction function call closure nextgroup=aleoFuncName skipwhite skipempty
 syn keyword aleoType key value i8 i16 i32 i64 i128 u8 u16 u32 u64 u128 field group address scalar boolean
 syn keyword aleoVisibility constant public private aleo increment decrement
-syn keyword aleoImports import
+syn keyword aleoImports import nextgroup=aleoIdentifier skipwhite skipempty
 
 syn match aleoFuncName "\%(r#\)\=\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*" display contained
 syn match aleoIdentifier "\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*" display contained
