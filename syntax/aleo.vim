@@ -1,7 +1,7 @@
 " Language:     Aleo instructions
 " Description:  Vim syntax file for Aleo instructions
 " Maintainer:   Jules de Smit <jules@aleo.org>
-" Last Change:  September 20, 2022
+" Last Change:  September 23, 2022
 " For bugs, patches and license go to https://github.com/julesdesmit/aleo.vim
 
 " Match TODO comments
@@ -9,6 +9,7 @@ syn keyword aleoTodos TODO XXX FIXME NOTE NB SAFETY contained
 
 " Match language specific keywords
 syn keyword aleoKeywords
+      \ async
       \ as
       \ into
       \ finalize
